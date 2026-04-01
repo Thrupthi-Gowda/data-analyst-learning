@@ -1,0 +1,63 @@
+# Day 4 – SQL Aggregate Functions
+
+## Overview
+On Day 4 of my SQL learning journey, I practiced using aggregate functions to analyze and summarize data from a table. Aggregate functions are very important in data analysis because they help us understand patterns and insights from datasets.
+
+## Topics Covered
+- COUNT()
+- SUM()
+- AVG()
+- MIN()
+- MAX()
+- GROUP BY
+
+## Practice Table
+Student_day2
+
+This table contains student information such as:
+- ID
+- Name
+- Marks
+
+## SQL Queries Practiced
+
+View all students
+SELECT * FROM Student_day2;
+
+Count total number of students
+SELECT COUNT(*) AS total_students
+FROM Student_day2;
+
+Find total marks of all students
+SELECT SUM(marks) AS total_marks
+FROM Student_day2;
+
+Find average marks
+SELECT AVG(marks) AS average_marks
+FROM Student_day2;
+
+Find highest marks
+SELECT MAX(marks) AS highest_marks
+FROM Student_day2;
+
+Find lowest marks
+SELECT MIN(marks) AS lowest_marks
+FROM Student_day2;
+
+Group students based on marks
+SELECT marks, COUNT(*) AS student_count
+FROM Student_day2
+GROUP BY marks;
+
+## Key Learnings
+- Aggregate functions help summarize data.
+- GROUP BY is used to organize data into categories.
+- These queries are commonly used in real-world data analysis.
+
+## Tools Used
+- MySQL
+- Git
+- GitHub
+
+## Learning Progress
+This is part of my daily SQL practice as I work towards becoming a Data Analyst.
