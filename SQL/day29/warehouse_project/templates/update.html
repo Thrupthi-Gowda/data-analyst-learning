@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Product</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            width: 400px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+    <h2>Update Product</h2>
+
+    <form method="POST">
+        <input type="text" name="name" value="{{ data[1] }}">
+        <input type="text" name="warehouse" value="{{ data[2] }}">
+        <input type="number" name="quantity" value="{{ data[3] }}">
+        <input type="number" name="price" value="{{ data[4] }}">
+
+        <button type="submit">Update</button>
+    </form>
+</div>
+
+</body>
+</html>
