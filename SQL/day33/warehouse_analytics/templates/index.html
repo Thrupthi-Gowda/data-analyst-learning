@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Warehouse Inventory Analytics</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>📦 Warehouse Inventory Analytics System</h1>
+
+<div class="dashboard">
+
+    <div class="card">
+        <h3>Total Products</h3>
+        <h2>{{ total_products }}</h2>
+    </div>
+
+    <div class="card">
+        <h3>Total Stock</h3>
+        <h2>{{ total_stock }}</h2>
+    </div>
+
+    <div class="card">
+        <h3>Inventory Value</h3>
+        <h2>₹{{ inventory_value }}</h2>
+    </div>
+
+   
